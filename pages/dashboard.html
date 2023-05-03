@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@40,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="styles/fonts.css"> -->
+    <link rel="stylesheet" href="../styles/assets/css/global.css" />
+    <link rel="stylesheet" href="../styles/assets/css/dashboard.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- ---------------------HEADER NAVIGATION-------------------------->
+    <header>
+      <div class="nav-top">
+            <!-- right -->
+            <div class="logo">
+              <span id="menu-btn" class="material-symbols-sharp menu">menu</span>
+              <img src="../styles/assets/img/logo.png" alt="logo" />
+              <h2>Between~<span class="danger">Care</span></h2>
+                <button id="menu-btn">
+            </button>
+            </div>
+      
+        <!-- left -->
+            <div id="themecolor">
+            <span class="material-symbols-sharp active">light_mode</span>
+            <span class="material-symbols-sharp">dark_mode</span>
+            </div>
+            <p>Chat-lut <span class="username">Samia !</span></p>
+             <div class="profile user_avatar">
+             <img src="../public/upload/betweencareLogofr.png" alt="avatar" />
+           </div>
+      </div>
+    </header>
+
+    <!-- container -->
+    <div class="container">
+      <aside>
+       <!-- Sidebar left -->
+       <div class="sidebar">
+        <!-- <span id="close-btn" class="material-symbols-sharp close">close</span> -->
+        <a href="../index.html">
+          <span title="Accueil" class="material-symbols-sharp">roofing</span>
+          <h3>Accueil</h3>
+        </a>
+        <a class="active" href="/pages/dashboard.html">
+          <span title="Dashboard Accueil" class="material-symbols-sharp">grid_view</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="profil.html">
+          <span title="Profil utilisateur" class="material-symbols-sharp">person</span>
+          <h3>Profil</h3>
+        </a>
+        <a href="notfound.html"  >
+          <span title="Dashboard animaux" class="material-symbols-sharp">pets</span>
+          <h3>B-Care Board</h3>
+        </a>
+        <a href="notfound.html">
+          <span title="Mes annonces" class="material-symbols-sharp">list_alt</span>
+          <h3>Annonces</h3>
+        </a>
+        <a href="notfound.html">
+          <span title="Mes statistiques" class="material-symbols-sharp">Insights</span>
+          <h3>Statistiques</h3>
+        </a>
+      
+        <a href="friendsboard.html">
+          <span title="Tâches à faire" class="material-symbols-sharp">inventory</span>
+          <h3>ToDo Liste</h3>
+        </a>
+        <a href="notfound.html">
+          <span title="Mes amis" class="material-symbols-sharp">diversity_1</span>
+          <h3>Friends</h3>
+        </a>
+        <a href="notfound.html">
+          <span title="Mes messges" class="material-symbols-sharp">mail</span>
+          <h3>Messages</h3>
+          <span class="message-count">26</span>
+        </a>
+        <a href="add_animal.html">
+          <span title="Ajouter un animal" class="material-symbols-sharp">add</span>
+          <h3>Nouvel Animal</h3>
+        </a>
+        <a href="notfound.html">
+          <span title="Mes paramètres" class="material-symbols-sharp">settings</span>
+          <h3>Settings</h3>
+        </a>
+        <a href="login.html">
+          <span title="Me déconnecter" class="material-symbols-sharp">logout</span>
+          <h3>Logout</h3>
+        </a>
+        <!-- close sidebar -->
+        </div>
+      </aside>
+
+      <!-- ----------------------------Dashboard CENTER --------------------------- -->
+      <main>
+        <h1>Dashboard</h1>
+        <div class="date">
+          <input type="date"/>
+        </div>
+
+        <h2>Coup d'oeil sur 2023 :</h2>
+        <div class="insights">
+          <div class="care">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="32" height="32" fill-rule="evenodd" clip-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 6.827 6.827">
+                <defs>
+                  <style>
+                    .fil1{fill:#64b5f6}
+                  </style>
+                </defs>
+                <g id="Layer_x0020_1">
+                  <path fill="#1976d2" fill-rule="nonzero" d="M3.84 1.455v.785h-.853v-.785z"/>
+                  <path d="M2.56 2.027h1.707c.138 0 .262.059.352.154a.53.53 0 0 1 .143.364v3.428H2.064V2.545a.53.53 0 0 1 .144-.364.482.482 0 0 1 .351-.154z" class="fil1"/>
+                  <path fill="#1976d2" d="M4.373 2.79v2.627h-1.92V2.79z"/>
+                  <path d="M4.267 2.897H2.56V5.31h1.707V2.897zm-.854 1.148c.115 0 .22.028.298.073.087.052.14.125.14.21 0 .084-.053.158-.14.209a.598.598 0 0 1-.298.073.598.598 0 0 1-.297-.073c-.087-.051-.141-.125-.141-.21 0-.084.054-.157.14-.209a.598.598 0 0 1 .298-.073zm.382-.252a.15.15 0 0 1 .107.258.15.15 0 0 1-.258-.107.15.15 0 0 1 .151-.151zm-.368-.11a.15.15 0 0 1 .107.258.15.15 0 0 1-.258-.107.15.15 0 0 1 .151-.151zm-.396.093a.15.15 0 0 1 .107.258.15.15 0 0 1-.258-.107.15.15 0 0 1 .151-.15z" class="fil1"/>
+                  <path fill="#1565c0" fill-rule="nonzero" d="M3.072 1.118h.768V1.461h-.853V1.118z"/>
+                </g>
+                <path fill="none" d="M0 0h6.827v6.827H0z"/>
+              </svg>              
+              </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Soins</h3>
+                <h2>50,00€</h2>
+              </div>
+              <small class="text-mutted">+10% - [date]</small>
+            </div>
+          </div>
+          <!-- ------------------------------------------------------ -->
+
+          <div class="food">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="32" height="32" fill-rule="evenodd" clip-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 6.827 6.827">
+                <defs>
+                  <style>
+                    .fil2{fill:#546e7a}
+                  </style>
+                </defs>
+                <g id="Layer_x0020_1">
+                  <path fill="#995817" fill-rule="nonzero" d="M2.3 3.481c-.202.003-.321-.08-.376-.207a.443.443 0 0 1-.027-.227.785.785 0 0 1 .069-.234c.107-.233.328-.457.579-.505a.744.744 0 0 1 .729-.656h.011a.723.723 0 0 1 .72.634.519.519 0 0 1 .418.38.423.423 0 0 1 .096-.01c-.002 0-.01 0 0 0a.413.413 0 0 1 .414.414c0-.001 0-.01 0 0a.423.423 0 0 1-.418.425L3.84 3.49c-.54-.006-1.249-.013-1.54-.009z"/>
+                  <path fill="#90a4ae" d="M1.528 3.16h3.771c.103 0 .187.041.251.106.067.067.112.16.134.26l.282 1.238a.291.291 0 0 1 .007.065.317.317 0 0 1-.097.223.429.429 0 0 1-.295.124H1.246a.429.429 0 0 1-.295-.123.317.317 0 0 1-.098-.224c0-.02.003-.042.008-.065l.281-1.238a.534.534 0 0 1 .134-.26.346.346 0 0 1 .252-.105z"/>
+                  <path d="M1.528 3.16h3.771c.103 0 .187.041.251.106.067.067.112.16.134.26l.01.04h-4.56l.008-.04a.534.534 0 0 1 .134-.26.346.346 0 0 1 .252-.105zM2.553 3.994c.075 0 .144.023.198.06.033.023.06.051.08.083h1.165a.281.281 0 0 1 .08-.083.348.348 0 0 1 .198-.06c.087 0 .165.03.222.078a.247.247 0 0 1 .092.189.23.23 0 0 1-.036.122.252.252 0 0 1 .036.123c0 .073-.035.14-.092.188a.344.344 0 0 1-.222.078.344.344 0 0 1-.219-.076.266.266 0 0 1-.075-.098H2.847a.266.266 0 0 1-.075.098.344.344 0 0 1-.22.076.344.344 0 0 1-.221-.078.247.247 0 0 1-.092-.188.23.23 0 0 1 .035-.123.252.252 0 0 1-.035-.122c0-.074.035-.14.092-.189a.344.344 0 0 1 .222-.078z" class="fil2"/>
+                </g>
+                <path fill="none" d="M0 0h6.827v6.827H0z"/>
+              </svg>              
+              </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Alimentation</h3>
+                <h2>70,90€</h2>
+              </div>
+              <small class="text-mutted">+5% - [date]</small>
+            </div>
+          </div>
+
+          <!-- ------------------------------------------------------------ -->
+
+          <div class="objets">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="32" height="32" fill-rule="evenodd" clip-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 6.827 6.827">
+                <defs>
+                  <style>
+                    .fil3{fill:#b3824d;fill-rule:nonzero}
+                  </style>
+                </defs>
+                <g id="Layer_x0020_1">
+                  <g id="_318265120">
+                    <path id="_318265864" fill="#bd8f5e" fill-rule="nonzero" d="M2.72 2.042V1.87a.439.439 0 0 1 .44-.44h.507a.439.439 0 0 1 .44.44v.178h-.214V1.87a.226.226 0 0 0-.226-.226H3.16a.226.226 0 0 0-.227.226v.173H2.72z"/>
+                    <path id="_318266056" fill="#ca9e6f" fill-rule="nonzero" d="m5.734 3.376-.278 1.381a.905.905 0 0 1-.231.462.59.59 0 0 1-.428.178H2.03a.59.59 0 0 1-.427-.178.905.905 0 0 1-.231-.462l-.279-1.381H.96a.107.107 0 0 1 0-.213h4.907a.107.107 0 0 1 0 .213h-.133z"/>
+                    <path id="_318266104" fill="#b38451" fill-rule="nonzero" d="m1.136 3.18.238-.747a.584.584 0 0 1 .247-.316.754.754 0 0 1 .408-.11h2.768c.165 0 .302.042.409.11a.584.584 0 0 1 .247.316l.238.747H1.136z"/>
+                    <path id="_318266248" d="M2.72 3.696a.107.107 0 0 0-.213 0v1.173a.107.107 0 0 0 .213 0V3.696z" class="fil3"/>
+                    <path id="_318266128" d="M3.253 3.696a.107.107 0 0 0-.213 0v1.173a.107.107 0 0 0 .213 0V3.696z" class="fil3"/>
+                    <path id="_318265528" d="M3.787 3.696a.107.107 0 0 0-.214 0v1.173a.107.107 0 0 0 .214 0V3.696z" class="fil3"/>
+                    <path id="_318265672" d="M4.32 3.696a.107.107 0 0 0-.213 0v1.173a.107.107 0 0 0 .213 0V3.696z" class="fil3"/>
+                    <path id="_318265744" d="M4.853 3.696a.107.107 0 0 0-.213 0v1.173a.107.107 0 0 0 .213 0V3.696z" class="fil3"/>
+                    <path id="_318265648" d="M2.187 3.696a.107.107 0 0 0-.214 0v1.173a.107.107 0 0 0 .214 0V3.696z" class="fil3"/>
+                  </g>
+                </g>
+                <path fill="none" d="M0 0h6.827v6.827H0z"/>
+              </svg>
+              </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Accessoires</h3>
+                <h2>20,10€</h2>
+              </div>
+              <small class="text-mutted">+5% - [date]</small>
+            </div>
+          </div>
+
+          <div class="vet">
+            <span>
+            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="32" height="32" fill-rule="evenodd" clip-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 6.827 6.827">
+              <defs>
+                <style>
+                  .fil0{fill:#e30d18}
+                </style>
+              </defs>
+              <g id="Layer_x0020_1">
+                <path d="M3.843 1.703h-.86v.58H2.67V1.39h1.487v.893h-.314z" class="fil0"/>
+                <path fill="#bdbdbd" d="M1.267 2.08H5.56a.439.439 0 0 1 .44.44v2.427a.439.439 0 0 1-.44.44H1.267a.439.439 0 0 1-.44-.44V2.52a.439.439 0 0 1 .44-.44z"/>
+                <path d="M3.62 3.526h.753v.414H3.62v.753h-.414V3.94h-.753v-.414h.753v-.753h.414z" class="fil0"/>
+                <path fill="#e30d18" fill-rule="nonzero" d="M1.65 1.922h.54v.18h-.54v-.18zm2.987 0h.54v.18h-.54v-.18z"/>
+              </g>
+              <path fill="none" d="M0 0h6.827v6.827H0z"/>
+            </svg>
+            </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Vétérinaire</h3>
+                <h2>110,10€</h2>
+              </div>
+              <small class="text-mutted">+5% - [date]</small>
+            </div>
+          </div>
+        </div>
+        <!-- -------------------------------------FIN STATISQUES----------------------------------------------- -->
+
+        <!-- -------------------------Tableaux RESUME------------------------------->
+
+        <!-- -------------------------To Do List---------------------------- -->
+
+        <div class="actualy">
+          <h2>Dernières tâches</h2>
+          <table id="mytable">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Nom de la tâche</th>
+                <th>Description</th>
+                <th>Statut</th>
+                <th>Modifier</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>20/03/2023</td>
+                <td>anti puce</td>
+                <td>Acheter le collier antipuce</td>
+                <td>A faire</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td>25/04/2023</td>
+                <td>griffes</td>
+                <td>Couper les griffes de farouk</td>
+                <td>clos</td>
+                <td>...</td>
+              </tr>
+              <tr>
+                <td>04/04/2023</td>
+                <td>Croquettes</td>
+                <td>Ne pas oublier de commander les croquettes</td>
+                <td>En cours</td>
+                <td>...</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="../pages/careboard.html">Afficher dans care-board</a>
+        </div>
+
+        <!-- -------------------------Derniers achats---------------------------- -->
+
+        <div class="actualy">
+          <h2>Derniers achats</h2>
+          <table id="myTable">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Nom</th>
+                <th>Categorie</th>
+                <th>Description</th>
+                <th>Prix</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>20/03/2023</td>
+                <td>circuit</td>
+                <td>Jouets</td>
+                <td>petit circuit avec balles</td>
+                <td>22,50 €</td>
+              
+              </tr>
+              <tr>
+                <td>25/04/2023</td>
+                <td>Collier anti puce</td>
+                <td>Soins</td>
+                <td>Collier anti puce</td>
+                <td>35,50 €</td>
+                
+              </tr>
+              <tr>
+                <td>04/04/2023</td>
+                <td>Croquettes</td>
+                <td>Alimentation</td>
+                <td>Achat croquette de la semaine</td>
+                <td>12,50 €</td>
+                
+              </tr>
+            </tbody>
+          </table>
+          <a href="../pages/careboard.html">Afficher dans care-board</a>
+        </div>
+        <!-- ---------Derniers Soins----------------- -->
+        <div class="actualy">
+          <h2>Derniers Soins</h2>
+          <table id="mytable" >
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Nom</th>
+                <th>Categorie</th>
+                <th>Description</th>
+                <th>Prix</th>
+                <th>Remboursement</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>20/03/2023</td>
+                <td>Urgences soins</td>
+                <td>Veterinaire</td>
+                <td>Problèmes urinaires</td>
+                <td>92,50 €</td>
+                <td>30,0€</td>
+              </tr>
+              <tr>
+                <td>25/04/2023</td>
+                <td>Collier anti puce</td>
+                <td>Soins</td>
+                <td>Collier anti puce à renouveller</td>
+                <td>35,50 €</td>
+                <td>0,0€</td>
+              </tr>
+              <tr>
+                <td>04/04/2023</td>
+                <td>Antiparasitaire</td>
+                <td>soins</td>
+                <td>Vermifuge pour lulu</td>
+                <td>12,50 €</td>
+                <td>10,00€</td>
+              </tr>
+            </tbody>
+          </table>
+          <a id="linkCareBoard" href="careboard.html">Afficher dans care-board</a>
+        </div>
+      </main>
+      <!-- fin main -->
+
+      <!---------------------------------------- SIDEBAR BAR RIGHT & TOP -------------------------------------------->
+
+      <div class="right">  
+        <!-- Fin zone navbar / class top -->
+        <section>
+            <div class="matribu">
+              <h2 class="titletribu">Ma tribu</h2>
+              <div class="petfamily">
+                <div class="petuser">
+                  <div class="pet_avatar">
+                    <img src="../public/upload/mabrouka.jpg" alt="avatar" />
+                  </div>
+                  <div class="name">
+                    <p><b>Mabrouka</b><br>La fille des rues</p>
+                    <small class="text-muted">Européene - 4ans</small>
+                  </div>
+                </div>
+                <!--    other -->
+                <div class="petuser">
+                  <div class="pet_avatar">
+                    <img src="../public/upload/Farouk.jpg" alt="avatar" />
+                  </div>
+                  <div class="name">
+                    <p><b>Farouk</b><br>Le beau gosse</p>
+                    <small class="text-muted">Thaï - 3 ans</small>
+                  </div>
+                </div>
+                <a href="#" class="seeAll">Voir toute ma tribu</a>
+              </div>
+              <!-- </div> fin petfamily -->
+           </div>
+
+          <div class="notifications">
+                <h2 class="titlenotif">Derniers messages</h2>
+            
+                  <div class="updatesmessage">
+                      <div class="uploadsvg">
+                        <span class="material-symbols-sharp">notifications</span>                  
+                      </div>
+                      <div class="categorymessage">
+                        <p><b>notification</b></p>
+                        <p>Renouvellement vermifuge pour Farouk</p>
+                        <div class="infosmessage">
+                        <span>Lire</span><br>
+                        <small class="text-muted">23/03/23 - 12h10</small>
+                        </div>
+                      </div>
+                  </div>  
+                  <!--  fin 1  other -->
+                    <div class="updatesmessage">
+                      <div class="uploadsvg">
+                        <span class="material-symbols-sharp">notifications</span>                  
+                      </div>
+                      <div class="categorymessage">
+                        <p><b>notification</b></p>
+                        <p>Renouvellement vermifuge pour Mabrouka</p>
+                        <div class="infosmessage">
+                        <span>Lire</span><br>
+                        <small class="text-muted">05/04/23 - 12h10</small>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  fin 2  other -->
+                    <div class="updatesmessage">
+                        <div class="uploadsvg">
+                          <span class="material-symbols-sharp">notifications</span>                  
+                        </div>
+                        <div class="categorymessage">
+                              <p><b>message</b></p>
+                              <p>Une personne a répondu à votre annonce " chaton à adopter"</p>
+                              <div class="infosmessage">
+                              <span>Lire</span><br>
+                              <small class="text-muted">15/04/23 - 12h10</small>
+                              </div>
+                        </div>
+                      </div>
+                      <!-- fin 3 other -->
+                      <a href="#" class="seeAll">Voir tous mes messages</a>
+                   
+          </div> <!-- fin notifications -->
+        </section>
+      </div> <!-- fin right  -->
+    </div>   <!-- Fin container -->
+  </body>
+  <script src="../styles/assets/js/index.js"></script>
+</html>

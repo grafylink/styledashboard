@@ -1,0 +1,158 @@
+html{
+    font-size: 14px;
+}
+
+main .member_profil h1{
+    margin-bottom: 1rem;
+}
+
+main .member_profil h2{
+    margin-bottom: 1rem;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-background);
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+}
+
+/* card profil */
+form .avatarProfil img{
+    margin: auto;
+}
+
+main form .main_member{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+main form .main_member>div{
+   width: 100%;
+}
+
+form .profil {
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    padding: var(--card-padding);
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+form .profil:hover{
+    box-shadow: none;
+}
+
+/* format des input */
+.inpProfil{
+    max-width: 30rem;
+    min-width: 25rem;
+    height: 3rem;
+    margin: 1rem;
+    border: 1px solid rgb(220, 219, 219);
+    padding: 0.5rem 0.5rem;
+    border-radius: var( --border-radius-1);
+    background: var(--color-background);
+    box-shadow: var(--box-shadow-inp);
+}
+
+.inpProfil:hover{
+    box-shadow: none;
+}
+
+.right .stars{
+    padding: 1rem;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+}
+
+.right .stars div{
+    margin-bottom: 0.5rem;
+    box-shadow: var(--box-shadow);
+}
+.right .stars div:hover{
+    box-shadow: none;
+}
+
+.stars div img{
+    width: 250px;
+    height: auto;
+}
+
+.right .btn-profil{
+    max-width: 25rem;
+    min-width: 20rem;
+    padding: var(--padding-1);
+    border-radius: var(--border-radius-1);
+    cursor: pointer;
+    color: var( --color-white);
+    margin-top: 1.6rem;
+    box-shadow: var(--box-shadow);
+}
+
+ #delete{
+   background-color: var(--color-danger-force);
+}
+ #delete:hover{
+   box-shadow: none;
+}
+
+#uploading{
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+#uploading:hover{
+    box-shadow: none;
+}
+
+form .submit{
+    background-color: var(--color-bcaretwo);
+    height: 3rem;
+    color: azure;
+    border-radius: var(--border-radius-1);
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    text-transform:uppercase;
+}
+
+/* media queries */
+
+@media screen and (max-width: 992px){
+ 
+   .right{
+    display: none;
+   }
+}
+@media screen and (max-width: 600px){
+   .nav-top h2{
+    display: none;
+   }
+}
+
+@media screen and (max-width: 360px){
+    .inpProfil{
+        max-width: 5rem;
+        min-width: 5rem;
+        height: 3rem;
+        margin: 2rem;
+        padding-bottom: 0.7rem 0.5rem;
+        border-radius: var( --border-radius-1);
+        background: var(--color-background);
+        box-shadow: var(--box-shadow-inp);
+    }
+}
+
+
+
+/* media queries */
+

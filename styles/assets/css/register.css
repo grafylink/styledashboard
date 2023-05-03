@@ -1,0 +1,122 @@
+body{
+    height: 100vh;
+}
+
+main{
+    /* background: red; */
+    width: 100%;
+    height: 100%;
+    display: flex;  
+}
+
+/* image chaton */
+ .login_img{
+    background: rgb(111, 73, 177);
+    width: 50vw;
+    height: 100vh;
+    background: no-repeat 80% /cover url('../img/dog-cut.jpg');
+}
+
+
+main .loginForm{
+    width: 50vw;
+    min-width: 370px;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto;
+    flex-grow: 2;
+
+}
+
+ .loginForm form{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+ .titleLogin{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.membreLogin{
+    margin-bottom: 2rem;
+}
+
+/* .titleLogin h1{
+    margin-top: 1.2rem;
+} */
+
+.typeformtitle{
+    padding: 0.2rem;
+    background-color: var(--color-bcareone);
+    color: var(--color-white);
+}
+
+form p  {
+text-align: center;
+font-weight: 400;
+padding-bottom: 0.5rem;
+}
+
+.inpLogin{
+    width: auto;
+    min-width: 20rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 0.5rem;
+    padding: 0.7rem 0.5rem;
+    border: 1px solid rgb(206, 204, 204);
+    border-radius: var( --border-radius-1);
+   background: var(--color-background);
+   box-shadow: var(--box-shadow-inp);
+}
+
+.loginForm button{
+    width: 7rem;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background: var(--color-bcaretwo);
+    color: var( --color-white);
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 1rem;
+}
+
+.inpcheck{
+    appearance: auto;
+}
+@media screen and (max-width: 1000px){
+    .titleLogin{
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    main{
+        /* background: red; */  
+        display: flex;  
+        flex-direction: column;
+    }
+
+    .login_img{
+        background: rgb(111, 73, 177);
+        width: 100%;
+        min-height: 30%;
+        max-height: 40%;
+        background: no-repeat center /cover url('../img/dog-cut.jpg');
+    }
+}

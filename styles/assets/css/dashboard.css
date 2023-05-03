@@ -1,0 +1,497 @@
+html{
+    font-size: 14px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.88rem;
+    background: var(--color-background);
+    /* background: red; */
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    background: transparent;
+}
+
+header .nav-top{
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 3vw;
+}
+
+header .nav-top p{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 0.5rem ;
+}
+
+
+
+/* logo bcare */
+header .logo{
+    display: flex;
+    margin-right: auto;
+    gap: 0.8rem;
+}
+
+/* taille logo bcare */
+header .logo img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+
+/* fin header */
+
+.container{
+    /* background: blue; */
+    display: grid;
+    width: 95%;
+    margin: 0 auto;
+    gap: 1.5rem;
+    grid-template-columns: 14rem auto 20rem;
+}
+
+/* style barre laterale */
+
+.user_avatar img, .pet_avatar img{
+    border: 0.1rem solid var(--color-info-dark);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+}
+
+
+
+/* ======================SIDEBAR================================== */
+
+
+aside .sidebar{
+    /* background: white; */
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    position: relative;
+    top: 3rem;
+}
+
+aside h3{
+    font-weight: 600;
+    color: var(--color-bcaretwo);
+}
+
+aside .sidebar a{
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 2.9rem;
+    transition: all 300ms ease;
+}
+
+aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+}
+
+/* coloration du page en cours */
+aside .sidebar a.active{
+    background: var(--color-info-light);
+    color: var(--color-primary);
+    margin-left: 0;
+}
+
+/* petite languette */
+aside .sidebar a.active:before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    background: var(--color-primary);
+}
+
+aside .sidebar a.active span{
+    color: var(--color-primary);
+    margin-left: calc(1rem - 3px);
+    margin-left: 0;
+}
+
+aside .sidebar a:hover span{
+    color: var(--color-bcareone);
+}
+
+aside .sidebar a:hover span{
+   margin-left: 0.5rem;
+}
+
+/* anime icones */
+aside .sidebar .message-count{
+    background: var(--color-bcaretwo);
+    color: var(--color-white);
+    padding: 2px 10px;
+    font-size: 11px;
+    border-radius: var(--border-radius-1);
+}
+
+/* ----------------------MAIN------------------------------------ */
+main{
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+}
+
+main h1{
+    color: var(--color-dark);
+
+}
+
+main .date{
+    display: inline-block;
+    background-color: var(--color-light);
+    border-radius: var(--border-radius-1);
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 0.5rem 1.6rem;
+}
+
+main .date input[type="date"]{
+    background: transparent;
+    color: var(--color-dark);
+}
+
+main .insights{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+main .insights > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--color-white);
+    padding: var(--padding-2);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    gap: 1rem;
+    color: var(--color-info-dark);
+}
+
+main .insights > div:hover{
+    box-shadow: none;
+}
+
+/* icones sous resume */
+ main .insights > div span {
+    background: var(--color-bcaretwo);
+    padding: 0.3rem;
+    color: var(--color-white);
+    font-size: 1rem;
+    border-radius: 100%;
+} 
+
+/*   Table  Derniers achats */
+
+main .actualy{
+    margin-top: 2rem;
+    color: var(--color-bcareone);
+}
+
+table{
+   transition: all 0.5s ease-in-out;
+}
+
+tbody.hide td  {
+    display: none;
+}
+
+main .actualy table{
+    background:  var(--color-white);
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+main .actualy table:hover {
+    box-shadow: none;
+}
+
+main table th{
+    color: var(--color-info-dark);
+}
+
+main table tbody td{
+    height: 2.8rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-dark-variant);
+}
+
+main table tbody tr:last-child td{
+   border: none;
+}
+
+main .actualy a{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-bcaretwo);
+}
+/* inserer ::after (ligne au passage) */
+
+main .actualy a:hover{
+    color: var(--color-bcareone);
+}
+
+main .actualy h2{
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: var(--color-bcareone);
+}
+
+/* --------------------------- ASIDE RIGHT ----------------------------------------- */
+/* ma tribu */
+.right{
+    padding-top: 3rem;
+}
+.right .titletribu, .titlenotif{
+    padding-bottom: 1.4rem;
+    color: var(--color-bcareone);
+}
+
+.right .petfamily .petuser
+{
+    background: var(--color-white);
+    padding: var(--padding-1);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+.right .matribu .seeAll,
+.right .notifications .seeAll
+{
+   display: inline-block;
+   text-align: left;
+   margin-bottom: 1rem;
+}
+
+.right .matribu .seeAll:hover,
+.right .notifications .seeAll:hover
+{
+    color: var(--color-bcareone);
+}
+
+.right .petfamily .pet_avatar .name{
+    color: var(--color-bcareone);
+}
+
+.right .petfamily .petuser:hover{
+    box-shadow: none;
+}
+
+.right .matribu .petfamily .petuser{
+    display: grid;
+    grid-template-columns: 2.4rem auto;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    max-width: 17rem;
+    min-width: 15rem;
+}
+
+.right .notifications .updatesmessage{
+    display: flex;
+    gap: 2rem;
+    background: var(--color-white);
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+    cursor: pointer;
+    max-width: 19rem;
+} 
+
+.right .notifications .updatesmessages .updatesvg{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right .notifications .updatesmessages:hover{
+    box-shadow: none;
+}
+
+.right .notifications .infosmessage{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 1rem;
+}
+
+/* ----------------------------MEDIA QUERIES TABLETTE (max 1200px)---------------------------------------- */
+/* 1400 - 1200 - 992 - 768 - 576 - 576 */
+@media screen and (max-width: 1200px){
+ 
+    .container {
+        width: 94%;
+        grid-template-columns: 7rem auto 20rem;
+    }
+
+    aside .logo h2{
+        color: var(--color-white);
+        display: none;
+    }
+
+    aside .sidebar h3{
+        display: none;
+    }
+
+    .aside .sidebar a{
+        display: 5.6rem;
+    }
+
+    main .insights{
+        grid-template-columns: 20rem 20rem;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+    main .insights> div{
+        max-width: 20rem;
+    }
+
+    main table tbody tr td:last-child,
+    main table thead tr th:last-child
+    {
+        display: none;
+    }
+}
+
+/* ----------------------------MEDIA QUERIES---------------------------------------- */
+@media screen and (max-width: 992px){
+    /* body{
+      background-color: red;
+    } */
+
+    .container{
+        max-width: 992px;
+        display: grid;
+        grid-template-columns: 7rem 1fr;
+    }
+
+    aside .logo h2{
+        display: none;
+    }
+
+    aside .sidebar h3{
+        display: none;
+    }
+
+    .aside .sidebar a{
+        display: 5.6rem;
+    }
+
+     main .insights{
+        grid-template-columns: 20rem 20rem;
+        justify-content: space-around;
+        gap: 1rem;
+    } 
+    
+    main .insights> div{
+        max-width: 20rem;
+    }
+
+    .right{
+        width: 100vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;     
+    }
+
+    .right section {
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+  
+}
+
+/* ----------------MEDIA QUERIES ---------------------- */
+
+
+ @media screen and (max-width: 768px){
+
+    .container {
+      grid-template-columns: 0rem 1fr;
+    }
+
+    .menu{
+        display: block;
+    }
+   
+    header .logo img{
+        display: none;
+    }
+
+   aside .sidebar{
+    position: fixed;
+    left: 0rem;
+    box-shadow: var(--box-shadow);
+    background: var(--color-white);
+    z-index: 3;
+    display: none;
+    }
+
+    .message-count{
+        display: none;
+    }
+
+    table{
+        max-width: 700px;
+    }
+
+   .sidebar.active{
+        width: 5rem;
+        height: auto;
+        display: block;
+    }
+}
+   
+
+/* @media screen and (max-width: 576px){
+
+      header .nav-top {
+        width: 100%;
+        background: var(--color-white);
+        box-shadow: var(--box-shadow);
+      }
+
+} */

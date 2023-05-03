@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@40,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="styles/fonts.css"> -->
+    <link rel="stylesheet" href="../styles/assets/css/global.css" />
+    <link rel="stylesheet" href="../styles/assets/css/dashboard.css" />
+    <link rel="stylesheet" href="../styles/assets/css/add_animal.css">
+    <title>Add Animal</title>
+  </head>
+  <body>
+    <!-- ---------------------HEADER NAVIGATION-------------------------->
+    <header>
+      <div class="nav-top">
+            <!-- right -->
+            <div class="logo">
+              <span id="menu-btn" class="material-symbols-sharp menu">menu</span>
+              <img src="../styles/assets/img/logo.png" alt="logo" />
+              <h2>Between~<span class="danger">Care</span></h2>
+                <button id="menu-btn">
+            </button>
+            </div>
+      
+        <!-- left -->
+            <div id="themecolor">
+            <span class="material-symbols-sharp active">light_mode</span>
+            <span class="material-symbols-sharp">dark_mode</span>
+            </div>
+            <p>Chat-lut <span class="username">Samia !</span></p>
+             <div class="profile user_avatar">
+             <img src="../public/upload/betweencareLogofr.png" alt="avatar" />
+           </div>
+      </div>
+    </header>
+
+    <!-- container -->
+    <div class="container">
+      <aside>
+       <!-- Sidebar left -->
+       <div class="sidebar">
+        <!-- <span id="close-btn" class="material-symbols-sharp close">close</span> -->
+        <a href="../index.html">
+          <span title="Accueil" class="material-symbols-sharp">roofing</span>
+          <h3>Accueil</h3>
+        </a>
+        <a href="/pages/dashboard.html">
+          <span title="Dashboard Accueil" class="material-symbols-sharp">grid_view</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="profil.html">
+          <span title="Profil utilisateur" class="material-symbols-sharp">person</span>
+          <h3>Profil</h3>
+        </a>
+        <a href="notfound.html"  >
+          <span title="Dashboard animaux" class="material-symbols-sharp">pets</span>
+          <h3>B-Care Board</h3>
+        </a>
+        <a href="notfound.html">
+          <span title="Mes annonces" class="material-symbols-sharp">list_alt</span>
+          <h3>Annonces</h3>
+        </a>
+        <a href="notfound.html">
+          <span title="Mes statistiques" class="material-symbols-sharp">Insights</span>
+          <h3>Statistiques</h3>
+        </a>
+      
+        <a href="friendsboard.html">
+          <span title="Tâches à faire" class="material-symbols-sharp">inventory</span>
+          <h3>ToDo Liste</h3>
+        </a>
+        <a href="notfound.html">
+          <span title="Mes amis" class="material-symbols-sharp">diversity_1</span>
+          <h3>Friends</h3>
+        </a>
+        <a href="notfound.html">
+          <span title="Mes messges" class="material-symbols-sharp">mail</span>
+          <h3>Messages</h3>
+          <span class="message-count">26</span>
+        </a>
+        <a  class="active" href="add_animal.html">
+          <span title="Ajouter un animal" class="material-symbols-sharp">add</span>
+          <h3>Nouvel Animal</h3>
+        </a>
+        <a href="notfound.html">
+          <span title="Mes paramètres" class="material-symbols-sharp">settings</span>
+          <h3>Settings</h3>
+        </a>
+        <a href="login.html">
+          <span title="Me déconnecter" class="material-symbols-sharp">logout</span>
+          <h3>Logout</h3>
+        </a>
+        <!-- close sidebar -->
+        </div>
+      </aside>
+
+      <!-- ----------------------------Dashboard CENTER --------------------------- -->
+      <main>
+        <div class="pet_profil">
+            <h1>Profil [nom animal]</h1>
+              <form action="">
+              <!-- profil avatar -->
+              <div class=" profil avatarProfil">
+                <h2>Ajouter profil animal</h2>
+                <p class="pet_avatar"><label for="pseudo"><img src="../public/upload/Farouk.jpg" alt=""></label></p><input type="file" accept=".jpg, .png" name="#" id="#">
+                <p><input class="inpProfil" type="text" name="name_animal" id="name_animal" placeholder="nom de mon animal"></p> 
+                <p><input class="inpProfil" type="text" name="name_animal" id="name_animal" placeholder="petit texte descriptif"></p> 
+              </div>
+              <!-- profil user -->
+              <div class="main_member">
+              
+                <div class="profil petProfil">
+                    <h2>A propos de mon animal</h2>
+
+               <!-- <label for="pet-select">Sélectionnez la catégorie</label> -->
+                    <div>
+                    <select name="pets" id="pet-select">
+                        <option value="">--Catégorie--</option>
+                        <option value="dog">Chien</option>
+                        <option value="cat">Chat</option>
+                        <option value="hamster">Nac</option>
+                        <option value="parrot">Cheval</option>
+                        <option value="spider">...</option>
+                    </select>
+                     </div>
+            <div>
+                <p>Sexe : </p>
+                <input class="sexe_animal" type="radio" id="femelle" name="femelle" value="femelle" checked>
+                <label for="femelle">femelle</label>
+                <input class="sexe_animal" type="radio" id="male" name="drone" value="male">
+                <label for="male">male</label>
+                
+             </div>
+             <p>Née le : <input type="date"></p>
+             <div>
+                
+             </div>
+                <p><label for="pseudo">nom de naissance</label></p><input class="inpProfil" type="text" name="pseudonyme" id="pseudonyme" placeholder="">
+                <p><label for="pseudo">race</label></p><input class="inpProfil" type="email" name="email" id="email" placeholder="">
+                <p><label for="pseudo">mère</label></p><input  class="inpProfil" type="text" name="nom" id="nom" placeholder="">
+                <p><label for="pseudo">père</label></p><input  class="inpProfil" type="text" name="prenom" id="prenom" placeholder="">
+                <p><label for="pseudo">Eleveur</label></p><input class="inpProfil"  type="text" name="tel" id="tel" placeholder="">
+              </div>
+             <!-- profil adress -->
+              <div class="profil adressProfil">
+                <h2>Son identification</h2>
+                <p><label for="pseudo">ICAD</label></p><input class="inpProfil"  type="text" name="adresse" id="adresse" placeholder="">
+                <p><label for="pseudo">Tatouage</label></p><input class="inpProfil"  type="text" name="adresse" id="adresse" placeholder="">
+                <p><label for="pseudo">Micro Puce</label></p><input  class="inpProfil" type="text" name="cp" id="cp" placeholder="">
+                <p><label for="pseudo">LOF</label></p><input class="inpProfil"  type="text" name="city" id="city" placeholder="">
+              </div> 
+            </div>
+            <!-- profil data -->
+                  <div class="profil">
+                    
+                  </div>
+                <button class="submit">mettre à jour son profil</button>
+            </form>
+          </div>
+            <!-- fin profil -->
+            
+       </main>
+            <!---------------------------------------- SIDEBAR BAR RIGHT & TOP -------------------------------------------->
+            
+            <div class="right"> 
+           <!--   <div class="stars">
+              <div>
+                <img src="../public/upload/IMG_1351.jpg" alt="">
+              </div>
+              <div>
+                <img src="../public/upload/IMG_1435.jpg" alt="">
+              </div>
+              <div>
+                <img src="../public/upload/IMG_1473.jpg" alt="">
+              </div>
+            </div>
+             <button id="uploading" class="btn-profil">Télécharger mes données</button>
+               
+              <button id="delete" class="btn-profil ">supprimer mon compte</button>
+                    
+            </div>  -->
+    </div>   <!-- Fin container -->
+  </body>
+  <script src="../styles/assets/js/index.js"></script>
+</html>

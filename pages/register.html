@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@40,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/assets/css/global.css">
+    <link rel="stylesheet" href="../styles/assets/css/register.css">
+    <title>Register</title>
+</head>
+<body>
+    
+    <!-- page connexion -->
+    <main>
+        <div class="login_img"> 
+            <!-- image chaton en css-->
+        </div> 
+        <section class="loginForm">
+                <div class="titleLogin logo">
+                    <!-- <img src="../styles/assets/img/logo.png" alt="logo" /> -->
+                    <h1>BetweenCare <span class="typeformtitle">Inscription</span></h1>
+                    <!-- <h2>Mon espace</h2> -->
+                </div>
+                <div class="membreLogin"><p>vous êtes déjà membre, connectez-vous <a href="login.html"> ici</a></p></div>
+                <div>
+                    <form action="#">
+                        <div>
+                            <p><label for="username">Je choisi mon pseudo</label></p>
+                            <input class="inpLogin" type="text" name="username" id="username" placeholder="John">
+                        </div>
+                        <div>
+                            <p><label for="email">Mon email</label></p>
+                            <input class="inpLogin" type="email" name="email" id="email" placeholder="johndoe@monemail.com">
+                        </div>
+                        <div>
+                            <p><label for="password">Mon mot de passe</label></p>
+                            <input class="inpLogin" type="password" name="password" id="password" placeholder="mon mot de passe">
+                        </div>
+                        <div>
+                            <p><label for="password2">Confirmer mon mot de passe</label></p>
+                            <input class="inpLogin" type="password" name="password2" id="password2" placeholder="je confirme mon mot de passe">
+                        </div>
+                        <div>
+                            <p>
+                                <input class="inpcheck" type="checkbox" name="cgv" id="cgv" checked>
+                                <label for="cgv">Accepter les CGU</label>
+                                <div>
+                                    <a href="../index.html"> <span title="Accueil" class="material-symbols-sharp">house</span></a>
+                                </div>
+                            </p>
+                        </div>
+                        <div>
+                            <button type="submit">Valider</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+    </main>
+</body>
+</html>

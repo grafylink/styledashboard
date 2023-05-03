@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #333;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    background: transparent;
+}
+
+header .nav{
+    margin: 0 auto;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 3vw;
+}
+
+header .nav p{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0 0.5rem ;
+}
+
+header .nav .theme_toogle_color{
+    background: var(--color-light);
+    display: inline-flex;
+    margin-right: 1.3rem;
+    border-radius: 0.2rem;
+}
+
+header .nav .logo {
+    cursor: pointer;
+}
+
+/* logo bcare */
+header .logo{
+    display: flex;
+    margin-right: auto;
+    gap: 0.8rem;
+}
+
+/* taille logo bcare */
+
+
+main{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    /* margin-top: 0; */
+    background: no-repeat center 30% /cover url('../img/catfound.jpg');
+} 
+
+h1{
+    font-family: 'Open sans';
+    font-weight: 300px;
+    font-size: 3rem;
+    color: #DB8C3F;
+    display: inline-block;
+    margin-top: 2rem;
+    position: relative;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 80%;
+    width: 3px;
+    background: #000000;
+    right: -15px;
+    top: 0;
+    animation: cursor 1s infinite;
+}
+
+@keyframes cursor{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* media queries */
+
+@media screen and (max-width: 1200px){
+
+    h1{
+        font-size: 2.7rem;
+    }
+}
+@media screen and (max-width: 992px){
+
+    h1{
+        font-size: 2.4rem;
+    }
+}
+@media screen and (max-width: 768){
+
+    h1{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width: 360){
+
+    h1{
+        font-size: 2rem;
+    }
+}
