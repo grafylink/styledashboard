@@ -147,6 +147,10 @@ body{
     cursor: pointer;
 }
 
+#lock-mail{
+  background-color: #ffbb55;
+}
+
  #access  p{
     color: var(--color-white-variant);
 }
@@ -196,22 +200,47 @@ nav{
     fill: var(--color-dark);
     cursor: pointer;
 }
-
+.logo{
+    position: absolute;
+    top: 60px;
+    left: 25px;
+}
 .login{
     position: absolute;
     top: 60px;
     right: 15px;
     border: none;
     outline: none;
-    border-radius: var(--border-radius-2);
-    background: var(--color-bcareone);
+    border-radius: 3px;
+    background: var(--color-bcaretwo);
     color: var(--color-white);
-    padding: 10px 15px;
+    padding: 15px 35px;
     cursor: pointer;
+    text-align: center;
+    box-shadow: var(--box-shadow-inp);
 }
 
-@media screen and (max-width: 810px)
+
+
+
+main .head-infos{
+    width: 100%;
+    height: 350px;
+    background-color: #111e88;
+}
+main .head-infos .img-head{
+    width: 100%;
+    height: 100%;
+    background: no-repeat center/ cover url('/styles/assets/img/adorable-white-bulldog-puppy-portrait-social-banner.jpg');
+}
+
+@media screen and (max-width: 910px)
 {
+    .logo{
+        display: none;
+    }
+
+
  .toogle-nav{
     display: block;
  }
@@ -237,18 +266,9 @@ nav{
  }
 
 
-}
-
-
-main .head-infos{
-    width: 100%;
-    height: 350px;
-    background-color: #111e88;
-}
-main .head-infos .img-head{
+ main .head-infos .img-head{
     width: 100%;
     height: 100%;
-    background: no-repeat center/ cover url('/styles/assets/img/adorable-white-bulldog-puppy-portrait-social-banner.jpg');
+    background: no-repeat 35%/ cover url('/styles/assets/img/adorable-white-bulldog-puppy-portrait-social-banner.jpg');
 }
-
-
+}

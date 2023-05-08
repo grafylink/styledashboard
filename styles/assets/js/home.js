@@ -5,16 +5,10 @@ themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
 themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
 });
 
-// const btn = document.querySelector(".login");
 
-// btn.addEventListener('click', () => {
-//     btn.classList.toogle('active');
-// })
-
-
+//menu responsive burger
 const listnav = document.querySelector('.liste-nav');
 const btnmenu = document.querySelector('.toogle-nav')
-
 
 btnmenu.addEventListener('click', () => {
    listnav.classList.toggle('active-nav');
