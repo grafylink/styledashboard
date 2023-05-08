@@ -1,0 +1,254 @@
+:root {
+    --color-bcareone: #f99d0b;
+    --color-bcaretwo:#385170;
+    --color-bcarethird: #ececec;
+    --color-primary: #7380ec;
+    --color-danger: #ff7782;
+    --color-danger-force: #c50919;
+    --color-success: #41f1b6;
+    --color-warning: #ffbb55;
+    --color-white: #fff;
+    --color-white-variant: #f0eaea;
+    --color-info-dark: #7d8da1;
+    --color-info-light: #dce1eb;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    
+    --card-border-radius: 0.9rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+    
+    --card-padding: 1.8rem;
+    --padding-1: 1.3rem;
+    --padding-2: 1.2rem;
+    
+    --box-shadow: 0 2rem 3rem var(--color-light);
+    --box-shadow-inp: 0 1rem 2rem var(--color-light);
+    }
+
+    .dark-theme-variables
+    {
+         --color-background: #181a1e;
+         --color-white: #202528;
+         --color-white-variant: #e2dddd;
+         --color-info-dark: #edeffd;
+         --color-dark-variant: #a3bdcc;
+         --color-light: rgba(0, 0, 0, 0.4);
+         --box-shadow: 0 2rem 3rem var(--color-light);
+         --color-bcaretwo: #f99d0b;
+         --color-dark: white;
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--color-dark);
+    }
+    
+    h1{
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+    
+    h2{
+        font-size: 1.4rem;
+    }
+    
+    h3{
+        font-size: 0.97rem;
+    }
+    h4{
+        font-size: 0.8rem;
+    }
+    h5{
+        font-size: 0.77rem;
+    }
+    
+    small{
+        font-size: 0.75rem;
+    }
+
+    img{
+        display: block;
+        width: 100%;
+    }
+    
+    .text-muted{
+        color: var(--color-info-dark);
+    }
+    
+    p{
+        color: var(--color-dark-variant);
+    }
+    
+    b{
+        color: var(--color-dark);
+    }
+    
+    .primary{
+        color: var(--color-primary);
+    }
+    
+    .danger{
+        color: var(--color-danger);
+    }
+    .success{
+        color: var(--color-success);
+    }
+    .warning{
+        color: var(--color-success);
+    }
+
+    .user_avatar img, .pet_avatar img{
+        border: 0.1rem solid var(--color-info-dark);
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        overflow: hidden;
+    }
+    
+    .logo img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+/* fin global */
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    background: var(--color-background);
+    font-size: 14px;
+}
+ #access{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--color-bcaretwo);
+    padding: 0 1.2vw;
+    z-index: 1;
+}
+
+#access #themecolor{
+    display: inline-flex;
+    margin-right: 1.3rem;
+    background: var(--color-white-variant);
+    cursor: pointer;
+}
+
+ #access  p{
+    color: var(--color-white-variant);
+}
+
+  #access #themecolor span{
+    padding: 0.2rem; 
+}
+
+ #access #themecolor span.active{
+    background: var(--color-bcareone);
+    color: white;
+    padding: 0.2rem;
+} 
+
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+.liste-nav{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.nav-item{
+    display: inline-block;
+    line-height: 70px;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.nav-item a{
+    color: var(--color-dark);
+}
+
+.toogle-nav{
+    position: absolute;
+    top: 65px;
+    left: 15px;
+    display: none;
+}
+
+.toogle-nav svg{
+    fill: var(--color-dark);
+    cursor: pointer;
+}
+
+.login{
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius-2);
+    background: var(--color-bcareone);
+    color: var(--color-white);
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 810px)
+{
+ .toogle-nav{
+    display: block;
+ }
+
+ nav {
+    border-bottom: 1px solid var(--color-bcaretwo);
+ }
+
+ .liste-nav{
+    position: relative;
+    top: 70px;
+    display: none;
+ }
+
+ .nav-item{
+    display: block;
+    background: var(--color-white);
+    margin: 0;
+ }
+
+ .liste-nav.active-nav{
+    display: block;
+ }
+
+
+}
+
+
+main .head-infos{
+    width: 100%;
+    height: 350px;
+    background-color: #111e88;
+}
+main .head-infos .img-head{
+    width: 100%;
+    height: 100%;
+    background: no-repeat center/ cover url('/styles/assets/img/adorable-white-bulldog-puppy-portrait-social-banner.jpg');
+}
+
+
